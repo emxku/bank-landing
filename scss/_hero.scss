@@ -7,3 +7,21 @@
     max-height: 950px;
     width: 100%;
 }
+
+.nav{
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .bankname{
+        display: flex;
+        flex-direction: row;
+        //align-items: center;
+        //justify-content: space-between;
+        font-family: $robld;
+        font-size: 34px;
+        color: white;
+    }
+}

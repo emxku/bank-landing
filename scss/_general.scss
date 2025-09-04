@@ -1,82 +1,89 @@
-$ismed: "is_med", sans-serif;
-$isreg: "is_reg", sans-serif;
-$isbold: "is_bold", sans-serif;
-$robld: "rob_bold", sans-serif;
-$ismldbld: "is_sembold", sans-serif;
-$rbxtrbld: "rob_xtrbld", sans-serif;
-$rbsmbld: "rob_smbld", sans-serif;
-$robrg: "rob_rg", sans-serif;
+$ismed: "InstrumentSans-Medium", sans-serif;
+$isreg: "InstrumentSans-Regular", sans-serif;
+$isbold: "InstrumentSans-Bold", sans-serif;
+$robld: "RobotoCondensed-Bold", sans-serif;
+$ismldbld: "InstrumentSans-SemiBold", sans-serif;
+$rbxtrbld: "RobotoCondensed-ExtraBold", sans-serif;
+$rbsmbld: "RobotoCondensed-SemiBold", sans-serif;
+$robrg: "RobotoCondensed-Regular", sans-serif;
 
 @font-face {
-    font-family: 'is_med';
-    src: url('InstrumentSans-Medium.woff2') format('woff2'),
-        url('InstrumentSans-Medium.woff') format('woff');
+    font-family: 'InstrumentSans-Medium';
+    src: local('InstrumentSans-Medium')
+        url('../fonts/InstrumentSans-Medium.woff2') format('woff2'),
+        url('../fonts/InstrumentSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'is_reg';
-    src: url('InstrumentSans-Regular.woff2') format('woff2'),
-        url('InstrumentSans-Regular.woff') format('woff');
+    font-family: 'InstrumentSans-Regular';
+    src: local('InstrumentSans-Regular')
+        url('../fonts/InstrumentSans-Regular.woff2') format('woff2'),
+        url('../fonts/InstrumentSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'is_bold';
-    src: url('InstrumentSans-Bold.woff2') format('woff2'),
-        url('InstrumentSans-Bold.woff') format('woff');
+    font-family: 'InstrumentSans-Bold';
+    src: local('InstrumentSans-Bold')
+        url('../fonts/InstrumentSans-Bold.woff2') format('woff2'),
+        url('../fonts/InstrumentSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'rob_bld';
-    src: url('RobotoCondensed-Bold.woff2') format('woff2'),
-        url('RobotoCondensed-Bold.woff') format('woff');
+    font-family: 'RobotoCondensed-Bold';
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+    src: local('RobotoCondensed-Bold'),
+        url('../fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-Bold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'is_sembold';
-    src: url('InstrumentSans-SemiBold.woff2') format('woff2'),
-        url('InstrumentSans-SemiBold.woff') format('woff');
+    font-family: 'InstrumentSans-SemiBold';
+    src: local('InstrumentSans-SemiBold')
+        url('../fonts/InstrumentSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/InstrumentSans-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'rob_xtrbld';
-    src: url('RobotoCondensed-ExtraBold.woff2') format('woff2'),
-        url('RobotoCondensed-ExtraBold.woff') format('woff');
+    font-family: 'RobotoCondensed-ExtraBold';
+    src: local('RobotoCondensed-ExtraBold')
+        url('../fonts/RobotoCondensed-ExtraBold.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'rob_smbld';
-    src: url('RobotoCondensed-SemiBold.woff2') format('woff2'),
-        url('RobotoCondensed-SemiBold.woff') format('woff');
+    font-family: 'RobotoCondensed-SemiBold';
+    src: local('RobotoCondensed-SemiBold')
+        url('../fonts/RobotoCondensed-SemiBold.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'rob_rg';
-    src: url('RobotoCondensed-Regular.woff2') format('woff2'),
-        url('RobotoCondensed-Regular.woff') format('woff');
+    font-family: 'RobotoCondensed-Regular';
+    src: local('RobotoCondensed-Regular')
+        url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-
 
