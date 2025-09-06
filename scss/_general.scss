@@ -6,6 +6,16 @@ $ismldbld: "InstrumentSans-SemiBold", sans-serif;
 $rbxtrbld: "RobotoCondensed-ExtraBold", sans-serif;
 $rbsmbld: "RobotoCondensed-SemiBold", sans-serif;
 $robrg: "RobotoCondensed-Regular", sans-serif;
+$robmed: "RobotoCondensed-Medium", sans-serif;
+$black: #00070B;
+$green: #00BD97;
+$darkengreen: #002E25;
+$boldgreen: #094C3F;
+$salat: #BBFF00;
+$boloto: #709900;
+$white: #FFFFFF;
+$sky: #D6FFF7;
+
 
 @font-face {
     font-family: 'InstrumentSans-Medium';
@@ -87,3 +97,12 @@ $robrg: "RobotoCondensed-Regular", sans-serif;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'RobotoCondensed-Medium';
+    src: local('RobotoCondensed-Regular')
+        url('../fonts/RobotoCondensed-Medium.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-Mediumr.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

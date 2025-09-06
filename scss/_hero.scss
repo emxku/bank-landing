@@ -1,27 +1,106 @@
-.hero{
+.wrapper{
     background-color: black;
     background-image: url(/img/Background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-height: 950px;
-    width: 100%;
+    min-height: 950px;
+    padding-left: 120px;
+    padding-right: 120px;
+    
 }
 
-.nav{
-    margin-left: 120px;
-    margin-right: 120px;
+.hero{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card{
+    margin-top: 66px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:14px;
+    &__title{
+        color: $white;
+        font-family: $rbsmbld;
+        font-size: 95px;
+    }
+    &__sub{
+        color: $white;
+        font-family: $robmed;
+        font-size: 24px;
+    }
+    .CTA__buttons{
+    margin-top: 36px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    .bankname{
-        display: flex;
-        flex-direction: row;
-        //align-items: center;
-        //justify-content: space-between;
-        font-family: $robld;
-        font-size: 34px;
-        color: white;
+    gap:33px;
+    .account__button{
+        .account{
+            border-radius: 11111px;
+            border: 2px solid $salat;
+            color: $darkengreen;
+            background-color: $salat;
+            width: 303px;
+            height: 74px;
+            font-family: $rbsmbld;
+            font-size: 28px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .tutorial__button{
+        .tutorial{
+            padding-left: 8px;
+            display: flex;
+            gap: 11px;
+            align-items: center;
+            border-radius: 11111px;
+            border: 2px solid $white;
+            color: $darkengreen;
+            background-color: $white;
+            width: 303px;
+            height: 74px;
+            font-family: $rbsmbld;
+            font-size: 28px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+}
+
+.cardphoto{
+    margin-top: 66px;
+    display: grid;
+    justify-content: flex-end;
+    align-content: start;
+    grid-template-columns: 357px 357px;
+    grid-template-rows: 244px 436px;
+    grid-template-areas: 
+    "feedback stats"
+    "lowercard .";
+    min-height: 690px;
+    gap: 10px 10px;
+    &__feedback{
+        grid-area: feedback;
+        background-color: $sky;
+    }
+    &__stats{
+        grid-area: stats;
+        background-image: url(/img/stats.png);
+    }
+    &__lowercard{
+        grid-area: lowercard;
     }
 }

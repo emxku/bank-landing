@@ -1,0 +1,73 @@
+.nav{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .bankname{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 17px;
+        font-family: $robld;
+        font-size: 34px;
+        color: $white;
+        .logo{
+            cursor: pointer;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 70px;
+    }
+    &__item{
+        cursor: pointer;
+        color: $white;
+        font-family: $robmed;
+        font-size: 24px;
+        transition: transform 0.3s;
+        &:hover{
+            color: $sky;
+            transform: scale(1.05);
+        }
+    }
+    .header__buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 34px;
+        .button__login{
+            border: 2px solid $white;
+            background-color: $black;
+            color: $white;
+            border-radius: 555px;
+            width: 165px;
+            height: 49px;
+            font-family: $rbsmbld;
+            font-size: 26px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .button__signup{
+            background-color: $salat;
+            border: 2px solid $salat;
+            color: $black;
+            border-radius: 555px;
+            width: 165px;
+            height: 49px;
+            font-family: $rbsmbld;
+            font-size: 26px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
