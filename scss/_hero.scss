@@ -7,7 +7,7 @@
     min-height: 950px;
     padding-left: 120px;
     padding-right: 120px;
-    
+    box-sizing: border-box;
 }
 
 .hero{
@@ -81,6 +81,9 @@
 }
 
 .cardphoto{
+    position: relative;
+    width: 723px;
+    height: 690px;
     margin-top: 66px;
     display: grid;
     justify-content: flex-end;
@@ -95,12 +98,66 @@
     &__feedback{
         grid-area: feedback;
         background-color: $sky;
+        border-radius: 15px;
+        font-family: $rbsmbld;
+        padding-left: 35px;
+        padding-top: 31px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        .stars{
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            font-size: 80px;
+        }
+        .feedback{
+            font-size: 32px;
+            font-family: $robmed;
+        }
     }
     &__stats{
         grid-area: stats;
         background-image: url(/img/stats.png);
+        border-radius: 15px;
+        padding-top: 24px;
+        padding-right: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 14px;
+        .users{
+            font-family: $robmed;
+            font-size: 36px;
+            color: $white;
+        }
+        .countusers{
+            font-family: $rbsmbld;
+            font-size: 80px;
+            color: $salat;
+        }
     }
     &__lowercard{
         grid-area: lowercard;
+        .cardphoto__backgroundcard{
+            border-radius: 15px;
+            height: 436px;
+            width: 723px;
+            z-index: 0;
+        }
+        .cardphoto__person{
+            position: absolute;
+            z-index: 10;
+            top: 2px;
+            left: 45px;
+
+        }
+        .cardphoto__diagramm{
+            position: absolute;
+            z-index: 100;
+            right: 55px;
+            bottom: 35px;
+        }
     }
 }
