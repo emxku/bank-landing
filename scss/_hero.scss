@@ -5,18 +5,23 @@
     background-position: center;
     background-size: cover;
     min-height: 950px;
+    //width: 100%;
     padding-left: 120px;
     padding-right: 120px;
     box-sizing: border-box;
 }
 
 .hero{
-    display: flex;
+    display: grid;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 186px 69px;
+    grid-template-areas: "card cardphoto"
+                        "backedby cardphoto";
 }
 
 .card{
+    grid-area: card;
     margin-top: 66px;
     display: inline-flex;
     flex-direction: column;
@@ -81,6 +86,7 @@
 }
 
 .cardphoto{
+    grid-area: cardphoto;
     position: relative;
     width: 723px;
     height: 690px;
@@ -158,6 +164,36 @@
             z-index: 100;
             right: 55px;
             bottom: 35px;
+        }
+    }
+}
+
+.backedby{ 
+    grid-area: backedby;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    font-family: $rbsmbld;
+    color: $white;
+    &__title{
+        font-size: 26px;
+    }
+    &__list{
+        display: flex;
+        align-items: flex-start;
+        &__items{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 96px;
+            font-size: 32px;
+            &__item{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 11px;
+            }
         }
     }
 }
