@@ -1,0 +1,79 @@
+.insight{
+    padding-top: 65px;
+    padding-left: 120px;
+    padding-right: 120px;
+    box-sizing: border-box;
+    background-color: $white;
+    background-image: url(/img/Background-insight.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 29px;
+}
+
+.insight__title{
+    //smth
+    &__label{
+        font-family: $rbsmbld;
+        font-size: 80px;
+        color: $black;
+    }
+}
+
+.insight__cards{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    &__card1{
+        padding-top: 38px;
+        padding-bottom: 38px;
+        background-color: $black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 54px;
+        &__label{
+            text-align: center;
+            background: linear-gradient(90deg, #bf0 0%, #709900 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            font-family: $rbsmbld;
+            font-size: 40px;
+        }
+        &__lower{
+            background: linear-gradient(90deg, #bf0 0%, #709900 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 5px;
+            font-family: $rbsmbld;
+            &__count{
+                font-size: 48px;
+            }
+            &__desc{
+                font-size: 32px;
+            }// тут все переделать надо я ебал
+        }
+    }
+    &__card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__card3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
