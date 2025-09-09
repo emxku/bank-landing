@@ -1,8 +1,5 @@
 .insight{
-    padding-top: 65px;
-    padding-left: 120px;
-    padding-right: 120px;
-    box-sizing: border-box;
+    padding: 65px 120px;
     background-color: $white;
     background-image: url(/img/Background-insight.png);
     background-size: cover;
@@ -13,7 +10,6 @@
 }
 
 .insight__title{
-    //smth
     &__label{
         font-family: $rbsmbld;
         font-size: 80px;
@@ -21,70 +17,72 @@
     }
 }
 
+%card-base{
+    @include cardflex;
+    width: 100%;
+    min-width: 399px;
+    //max-width: 499px; по желанию настроить потом надобно когда адаптив делать буду
+    min-height: 529px;
+    border-radius: 15px;
+}
+
 .insight__cards{
-    //border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 90px;
     &__card1{
-        padding-top: 38px;
-        padding-bottom: 38px;
-        padding-left: 50px;
-        padding-right: 50px;
+        @extend %card-base;
         background-color: $black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
         gap: 54px;
-        border-radius: 15px;
         &__label{
             text-align: center;
-            background: linear-gradient(90deg, #bf0 0%, #709900 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-            font-family: $rbsmbld;
+            @include gradient-text;
+            font-family: $IntBold;
             font-size: 40px;
         }
         &__lower{
             background: linear-gradient(90deg, #bf0 0%, #709900 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
+            @include gradient-text;
             display: flex;
             flex-direction: row;
             align-items: flex-end;
             justify-content: space-between;
             gap: 5px;
-            font-family: $rbsmbld;
-            font-size: 48px;
+            font-family: $IntBold;
+            font-size: 40px;
         }
     }
     &__card2{
-        border: 1px solid red;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %card-base;
         gap: 42px;
         background-color: $white;
-        padding-top: 32px;
-        padding-bottom: 51px;
-        padding-left: 95px;
-        padding-right: 95px;
+        color: $black;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
         &__label{
             text-align: center;
             color: $black;
-            font-family: $rbsmbld;
+            font-family: $IntBold;
             font-size: 40px;
         }
     }
     &__card3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %card-base;
+        gap: 20px;
+        background-color: $white;
+        color: $black;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+        &__label{
+            font-family: $IntBold;
+            font-size: 40px;
+            text-align: center;
+        }
+        &__desc{
+            font-family: $robmed;
+            font-size: 24px;
+            text-align: center;
+        }
     }
 }
