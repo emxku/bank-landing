@@ -7,6 +7,8 @@ $rbxtrbld: "RobotoCondensed-ExtraBold", sans-serif;
 $rbsmbld: "RobotoCondensed-SemiBold", sans-serif;
 $robrg: "RobotoCondensed-Regular", sans-serif;
 $robmed: "RobotoCondensed-Medium", sans-serif;
+$IntBold: "Inter28pt-Bold", sans-serif;
+$IntSemBold: "Inter28pt-SemiBold", sans-serif;
 $black: #00070B;
 $green: #00BD97;
 $darkengreen: #002E25;
@@ -99,9 +101,28 @@ $sky: #D6FFF7;
 
 @font-face {
     font-family: 'RobotoCondensed-Medium';
-    src: local('RobotoCondensed-Regular')
+    src: local('RobotoCondensed-Medium')
         url('../fonts/RobotoCondensed-Medium.woff2') format('woff2'),
         url('../fonts/RobotoCondensed-Mediumr.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter28pt-Bold';
+    src: local('Inter28pt-Bold')
+        url('../fonts/Inter28pt-Bold.woff2') format('woff2'),
+        url('../fonts/Inter28pt-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter28pt-SemiBold';
+    src: local('Inter28pt-SemiBold')
+        url('../fonts/Inter28pt-SemiBold.woff2') format('woff2'),
+        url('../fonts/Inter28pt-SemiBold.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;

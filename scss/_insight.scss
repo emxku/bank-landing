@@ -22,7 +22,7 @@
 }
 
 .insight__cards{
-    border: 1px solid red;
+    //border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,11 +31,14 @@
     &__card1{
         padding-top: 38px;
         padding-bottom: 38px;
+        padding-left: 50px;
+        padding-right: 50px;
         background-color: $black;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 54px;
+        border-radius: 15px;
         &__label{
             text-align: center;
             background: linear-gradient(90deg, #bf0 0%, #709900 100%);
@@ -58,18 +61,26 @@
             justify-content: space-between;
             gap: 5px;
             font-family: $rbsmbld;
-            &__count{
-                font-size: 48px;
-            }
-            &__desc{
-                font-size: 32px;
-            }// тут все переделать надо я ебал
+            font-size: 48px;
         }
     }
     &__card2{
+        border: 1px solid red;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 42px;
+        background-color: $white;
+        padding-top: 32px;
+        padding-bottom: 51px;
+        padding-left: 95px;
+        padding-right: 95px;
+        &__label{
+            text-align: center;
+            color: $black;
+            font-family: $rbsmbld;
+            font-size: 40px;
+        }
     }
     &__card3{
         display: flex;
