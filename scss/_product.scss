@@ -1,0 +1,43 @@
+.product{
+    padding: 33px 120px;
+    background-color: $white;
+    background-image: url(/img/Background-insight.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 29px;
+}
+
+.product{
+    &__container{
+        &__list{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 90px;
+            color: $black;
+            &__item{
+                @include cardflex;
+                width: 100%;
+                min-width: 399px;
+                padding: 56px 21px;
+                gap: 11px;
+                border-radius: 15px;
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+                background-color: $white;
+                &__label{
+                    font-family: $robmed;
+                    font-size: 32px;
+                    text-align: center;
+                }
+                &__desc{
+                    font-family: $robrg;
+                    font-size: 24px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

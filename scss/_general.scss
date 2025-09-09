@@ -128,7 +128,7 @@ $sky: #D6FFF7;
     font-display: swap;
 }
 
-@mixin gradient-text {
+@mixin gradient-text{
     background: linear-gradient(90deg, #bf0 0%, #709900 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -136,7 +136,7 @@ $sky: #D6FFF7;
     color: transparent;
 }
 
-@mixin cardflex {
+@mixin cardflex{
     display: flex;
     flex-direction: column;
     align-items: center;
