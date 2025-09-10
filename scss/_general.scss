@@ -136,6 +136,14 @@ $sky: #D6FFF7;
     color: transparent;
 }
 
+@mixin vertgradient-text{
+    background: linear-gradient(180deg, #bf0 0%, #709900 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
 @mixin cardflex{
     display: flex;
     flex-direction: column;

@@ -9,13 +9,11 @@
     gap: 29px;
 }
 
-.insight__title{
-    &__label{
-        font-family: $rbsmbld;
-        font-size: 80px;
-        color: $black;
-    }
-}
+//.insight__title{
+//    &__label{
+//        // тут были свойства для h2, но я решил их вынести в reset потому что на сайте все h2 одинаковые
+//    }
+//}
 
 %card-base{
     @include cardflex;
