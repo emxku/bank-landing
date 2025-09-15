@@ -1,5 +1,5 @@
 .solutions{
-    position: relative;
+    //position: relative;
     padding: 118px 120px;
     background-color: $white;
     background-image: url(/img/Background-insight.png);
@@ -9,6 +9,10 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        gap:180px;
+        @media (max-width: 1600px){
+            flex-direction: column;
+        }
     }
 }
 
@@ -19,6 +23,9 @@
     //align-items: center;
     gap: 48px;
     &__box{
+        max-width: 883px;
+        min-width: 760px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 37px;
@@ -59,15 +66,15 @@
 }
 
 .solutions__container__photocard{
+    position: relative; // Создаем контекст
+    display: flex;
+    align-items: center;
+    justify-content: center;
     //короче, это пиздец, разберешься тут сам как зайдешь. Я ебал, это больше не моя ответственность. Попробуй все нахуй переделать, долбаеб мой друг
     &__card{
-        right: 0;
-        left: 20px;//54.94%
-        //top: 12.81%;
-        top: 508px;
-        bottom: 0;
-        position: relative;
-        z-index: 10;
+        position: absolute;
+        bottom: 282px;   
+        left: 23px;    
         width: 315px;
         height: 256px;
         display: flex;
@@ -78,6 +85,7 @@
         background-color: $black;
         border-radius: 15px;
         box-shadow: 9px 17px 50px 0 rgba(0, 0, 0, 0.25);
+        z-index: 10;
         .card-label{
             @include vertgradient-text;
             font-family: $rbsmbld;
@@ -93,9 +101,5 @@
     &__person{
         position: relative;
         z-index: 100;
-        //right: 0;//-15px
-        //left: 53%;
-        //top: -0.26%;//-5px calc(
-        //bottom: 0;
     }
 }

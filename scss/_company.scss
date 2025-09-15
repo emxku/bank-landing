@@ -1,0 +1,104 @@
+.company{
+    padding: 118px 120px;
+    background-color: $white;
+    background-image: url(/img/Background-insight.png);
+    background-size: cover;
+    &__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:180px;
+        @media (max-width: 1600px){
+            flex-direction: column;
+        }
+    }
+}
+
+.company__container__textcard{
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    gap: 48px;
+    &__box{
+        max-width: 883px;
+        min-width: 760px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+    }
+    &__box__desc{
+        text-align: left;
+        font-family: $robrg;
+        font-size: 24px;
+    }
+    &__module{
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        .module-item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 42px;
+            &__svgpick{
+                width: 93px;
+                height: 93px;
+            }
+            &__text{
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                &__label{
+                font-family: $rbxtrbld;
+                font-size: 26px;
+                }
+                &__desc{
+                    font-family: $robrg;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+.company__container__photocard{
+    position: relative; // Создаем контекст
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //короче, это пиздец, разберешься тут сам как зайдешь. Я ебал, это больше не моя ответственность. Попробуй все нахуй переделать, долбаеб мой друг
+    &__card{
+        position: absolute;
+        bottom: 282px;   
+        left: 23px;    
+        width: 315px;
+        height: 256px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        background-color: $black;
+        border-radius: 15px;
+        box-shadow: 9px 17px 50px 0 rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        .card-label{
+            @include vertgradient-text;
+            font-family: $rbsmbld;
+            font-size: 65px;
+        }
+        .card-desc{
+            color: $white;
+            font-family: $rbsmbld;
+            font-size: 22px;
+            text-align: center;
+        }
+    }
+    &__person{
+        position: relative;
+        z-index: 100;
+    }
+}
