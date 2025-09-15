@@ -18,6 +18,11 @@
     gap: 186px 69px;
     grid-template-areas: "card cardphoto"
                         "backedby cardphoto";
+    @media (max-width: 1600px){
+        grid-template-areas: "card ."
+                            "cardphoto ."
+                            "backedby .";
+    }
 }
 
 .card{
