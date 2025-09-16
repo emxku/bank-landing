@@ -1,0 +1,88 @@
+.testimonial{
+    padding: 46px 120px;
+    background-color: $white;
+    background-image: url(/img/Background-insight.png);
+    background-size: cover;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+    }
+}
+
+.left-button{
+    border-radius: 100%;
+    fill: $white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    height: 93px;
+    width: 93px;
+}
+
+.right-button{
+    border-radius: 100%;
+    fill: $white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    height: 93px;
+    width: 93px;
+}
+
+.testimonial__container{
+    &__textbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        //gap: 245px;
+        &__ptext{
+            font-family: $ismldbld;
+            font-size: 24px;
+        }
+    }
+    &__feedback{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 44px;
+        &__avatar{
+            max-height: 578px;
+            height: 100%;
+        }
+        &__card{
+            overflow: hidden;
+            padding: 62px 62px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 94px;
+            background-color: $black;
+            color: $white;
+            max-width: 1047px;
+            height: 578px;
+            width: 100%;
+            border-radius: 15px;
+            .feedback-text{
+                font-family: $isreg;
+                font-size: 36px;
+            }
+            .feedback-description{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                &__client{
+                    display: flex;
+                    flex-direction: column;
+                    &__name{
+                        font-family: $ismldbld;
+                        font-size: 28px;
+                    }
+                    &__state{
+                        font-family: $ismed;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

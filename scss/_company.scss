@@ -3,7 +3,6 @@
     background-color: $white;
     background-image: url(/img/Background-insight.png);
     background-size: cover;
-    gap: 180px;
     &__container{
         display: flex;
         flex-direction: row;
@@ -16,80 +15,9 @@
     }
 }
 
-.company__container__photocard{
-    position: relative; // Создаем контекст
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    //короче, это пиздец, разберешься тут сам как зайдешь. Я ебал, это больше не моя ответственность. Попробуй все нахуй переделать, долбаеб мой друг
-    &__card1{
-        position: relative;
-        bottom: 314px;   
-        left: 471px;    
-        width: 315px;
-        height: 256px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
-        background-color: $black;
-        border-radius: 15px;
-        box-shadow: 9px 17px 50px 0 rgba(0, 0, 0, 0.25);
-        z-index: 10;
-        .card-label{
-            @include vertgradient-text;
-            font-family: $rbsmbld;
-            font-size: 65px;
-        }
-        .card-desc{
-            color: $white;
-            font-family: $rbsmbld;
-            font-size: 22px;
-            text-align: center;
-        }
-    }
-        &__card2{
-        position: absolute;
-        bottom: 149px;   
-        left: 371px;    
-        width: 315px;
-        height: 256px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
-        background-color: $black;
-        border-radius: 15px;
-        box-shadow: 9px 17px 50px 0 rgba(0, 0, 0, 0.25);
-        z-index: 100;
-        .card-label{
-            @include vertgradient-text;
-            font-family: $rbsmbld;
-            font-size: 65px;
-        }
-        .card-desc{
-            color: $white;
-            font-family: $rbsmbld;
-            font-size: 22px;
-            text-align: center;
-        }
-    }
-    
-    &__person{
-        position: relative;
-        z-index: 1000;
-    }
-    
-}
-
 .company__container__textcard{
     display: flex;
     flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
     gap: 48px;
     &__box{
         max-width: 883px;

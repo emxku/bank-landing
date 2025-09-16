@@ -142,7 +142,6 @@ h2 {
   background-color: #FFFFFF;
   background-image: url(/img/Background-insight.png);
   background-size: cover;
-  gap: 180px;
 }
 .company__container {
   display: flex;
@@ -155,80 +154,6 @@ h2 {
     flex-direction: column;
     flex-flow: column-reverse;
   }
-}
-
-.company__container__photocard {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-}
-.company__container__photocard__card1 {
-  position: relative;
-  bottom: 314px;
-  left: 471px;
-  width: 315px;
-  height: 256px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  background-color: #00070B;
-  border-radius: 15px;
-  box-shadow: 9px 17px 50px 0 rgba(0, 0, 0, 0.25);
-  z-index: 10;
-}
-.company__container__photocard__card1 .card-label {
-  background: linear-gradient(180deg, #bf0 0%, #709900 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  font-family: "RobotoCondensed-SemiBold", sans-serif;
-  font-size: 65px;
-}
-.company__container__photocard__card1 .card-desc {
-  color: #FFFFFF;
-  font-family: "RobotoCondensed-SemiBold", sans-serif;
-  font-size: 22px;
-  text-align: center;
-}
-.company__container__photocard__card2 {
-  position: absolute;
-  bottom: 149px;
-  left: 371px;
-  width: 315px;
-  height: 256px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  background-color: #00070B;
-  border-radius: 15px;
-  box-shadow: 9px 17px 50px 0 rgba(0, 0, 0, 0.25);
-  z-index: 100;
-}
-.company__container__photocard__card2 .card-label {
-  background: linear-gradient(180deg, #bf0 0%, #709900 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  font-family: "RobotoCondensed-SemiBold", sans-serif;
-  font-size: 65px;
-}
-.company__container__photocard__card2 .card-desc {
-  color: #FFFFFF;
-  font-family: "RobotoCondensed-SemiBold", sans-serif;
-  font-size: 22px;
-  text-align: center;
-}
-.company__container__photocard__person {
-  position: relative;
-  z-index: 1000;
 }
 
 .company__container__textcard {
@@ -711,6 +636,92 @@ h2 {
 .solutions__container__photocard__person {
   position: relative;
   z-index: 100;
+}
+
+.testimonial {
+  padding: 46px 120px;
+  background-color: #FFFFFF;
+  background-image: url(/img/Background-insight.png);
+  background-size: cover;
+}
+.testimonial__container {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.left-button {
+  border-radius: 100%;
+  fill: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  height: 93px;
+  width: 93px;
+}
+
+.right-button {
+  border-radius: 100%;
+  fill: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  height: 93px;
+  width: 93px;
+}
+
+.testimonial__container__textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.testimonial__container__textbox__ptext {
+  font-family: "InstrumentSans-SemiBold", sans-serif;
+  font-size: 24px;
+}
+.testimonial__container__feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 44px;
+}
+.testimonial__container__feedback__avatar {
+  max-height: 578px;
+  height: 100%;
+}
+.testimonial__container__feedback__card {
+  overflow: hidden;
+  padding: 62px 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 94px;
+  background-color: #00070B;
+  color: #FFFFFF;
+  max-width: 1047px;
+  height: 578px;
+  width: 100%;
+  border-radius: 15px;
+}
+.testimonial__container__feedback__card .feedback-text {
+  font-family: "InstrumentSans-Regular", sans-serif;
+  font-size: 36px;
+}
+.testimonial__container__feedback__card .feedback-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.testimonial__container__feedback__card .feedback-description__client {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial__container__feedback__card .feedback-description__client__name {
+  font-family: "InstrumentSans-SemiBold", sans-serif;
+  font-size: 28px;
+}
+.testimonial__container__feedback__card .feedback-description__client__state {
+  font-family: "InstrumentSans-Medium", sans-serif;
+  font-size: 24px;
 }
 
 .nav {
