@@ -658,6 +658,10 @@ h2 {
   width: 93px;
 }
 
+.left-button:disabled, .right-button:disabled {
+  background: #e0e0e0;
+}
+
 .right-button {
   border-radius: 100%;
   fill: #FFFFFF;
@@ -666,6 +670,54 @@ h2 {
   width: 93px;
 }
 
+.testimonial__container__carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial__container__feedback {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateX(100%);
+}
+
+.testimonial__container__feedback.active {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 44px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.testimonial__container__feedback.slide-next {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 44px;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.testimonial__container__feedback.slide-prev {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 44px;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.testimonial__container__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .testimonial__container__textbox {
   display: flex;
   flex-direction: row;
@@ -675,13 +727,6 @@ h2 {
 .testimonial__container__textbox__ptext {
   font-family: "InstrumentSans-SemiBold", sans-serif;
   font-size: 24px;
-}
-.testimonial__container__feedback {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 44px;
 }
 .testimonial__container__feedback__avatar {
   max-height: 578px;

@@ -18,6 +18,9 @@
     width: 93px;
 }
 
+.left-button:disabled, .right-button:disabled {
+    background: #e0e0e0;
+}
 .right-button{
     border-radius: 100%;
     fill: $white;
@@ -26,7 +29,55 @@
     width: 93px;
 }
 
+.testimonial__container__carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonial__container__feedback {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateX(100%);
+}
+
+.testimonial__container__feedback.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 44px;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.testimonial__container__feedback.slide-next {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 44px;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.testimonial__container__feedback.slide-prev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 44px;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
 .testimonial__container{
+    &__buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     &__textbox{
         display: flex;
         flex-direction: row;
@@ -39,11 +90,6 @@
         }
     }
     &__feedback{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 44px;
         &__avatar{
             max-height: 578px;
             height: 100%;
