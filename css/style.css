@@ -137,6 +137,85 @@ h2 {
   color: #00070B;
 }
 
+.about {
+  padding: 100px 120px;
+  background-color: #FFFFFF;
+  background-image: url(/img/Background-insight.png);
+  background-size: cover;
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.about__container__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__container__text__desc {
+  font-family: "InstrumentSans-SemiBold", sans-serif;
+  font-size: 24px;
+}
+
+.about__container__card__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+}
+.about__container__card__list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  padding: 62px 38px;
+  gap: 24px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+.about__container__card__list__item__label {
+  color: #00070B;
+  font-family: "RobotoCondensed-SemiBold", sans-serif;
+  font-size: 65px;
+}
+.about__container__card__list__item__desc {
+  color: #00070B;
+  font-family: "RobotoCondensed-SemiBold", sans-serif;
+  font-size: 26px;
+}
+.about__container__card__list__another {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #00070B;
+  padding: 62px 38px;
+  gap: 24px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+.about__container__card__list__another__label {
+  background: linear-gradient(180deg, #bf0 0%, #709900 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-family: "RobotoCondensed-SemiBold", sans-serif;
+  font-size: 65px;
+}
+.about__container__card__list__another__desc {
+  color: #FFFFFF;
+  font-family: "RobotoCondensed-SemiBold", sans-serif;
+  font-size: 26px;
+}
+
 .company {
   padding: 0px 120px;
   background-color: #FFFFFF;
@@ -201,6 +280,78 @@ h2 {
 .company__container__textcard__module .module-item__text__desc {
   font-family: "RobotoCondensed-Regular", sans-serif;
   font-size: 24px;
+}
+
+.contact {
+  padding: 100px 120px;
+  background-color: #FFFFFF;
+  background-image: url(/img/Background-insight.png);
+  background-size: cover;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #00070B;
+  border-radius: 15px;
+  padding-bottom: 0;
+  padding-right: 87px;
+  padding-top: 104px;
+}
+.contact__container__textcontainer {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 36px;
+}
+.contact__container__textcontainer__label {
+  font-family: "RobotoCondensed-SemiBold", sans-serif;
+  font-size: 75px;
+}
+.contact__container__textcontainer__desc {
+  font-family: "RobotoCondensed-Medium", sans-serif;
+  font-size: 24px;
+}
+.contact__container__textcontainer__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+}
+.contact__container__textcontainer__buttons__download {
+  border-radius: 11111px;
+  border: 2px solid #BBFF00;
+  color: #002E25;
+  background-color: #BBFF00;
+  width: 303px;
+  height: 74px;
+  font-family: "RobotoCondensed-SemiBold", sans-serif;
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.contact__container__textcontainer__buttons__download:hover {
+  transform: scale(1.1);
+}
+.contact__container__textcontainer__buttons__chat {
+  padding-left: 8px;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  border-radius: 11111px;
+  border: 2px solid #FFFFFF;
+  color: #002E25;
+  background-color: #FFFFFF;
+  width: 303px;
+  height: 74px;
+  font-family: "RobotoCondensed-SemiBold", sans-serif;
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.contact__container__textcontainer__buttons__chat:hover {
+  transform: scale(1.1);
 }
 
 .hero-wrapper {
@@ -674,6 +825,7 @@ h2 {
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: 578px;
 }
 
 .testimonial__container__feedback {

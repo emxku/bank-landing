@@ -1,0 +1,72 @@
+.contact{
+    padding: 100px 120px;
+    background-color: $white;
+    background-image: url(/img/Background-insight.png);
+    background-size: cover;
+}
+
+.contact__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //align-items: center;
+    background-color: $black;
+    border-radius: 15px;
+    padding-bottom: 0;
+    padding-right: 87px;
+    padding-top: 104px;
+    &__textcontainer{
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 36px;
+        &__label{
+            font-family: $rbsmbld;
+            font-size: 75px;
+        }
+        &__desc{
+            font-family: $robmed;
+            font-size: 24px;
+        }
+        &__buttons{
+            display: flex;
+            flex-direction: row;
+            gap: 33px;
+            &__download{
+            border-radius: 11111px;
+            border: 2px solid $salat;
+            color: $darkengreen;
+            background-color: $salat;
+            width: 303px;
+            height: 74px;
+            font-family: $rbsmbld;
+            font-size: 28px;
+            cursor: pointer;
+            transition: transform 0.3s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            &__chat{
+                padding-left: 8px;
+            display: flex;
+            gap: 11px;
+            align-items: center;
+            border-radius: 11111px;
+            border: 2px solid $white;
+            color: $darkengreen;
+            background-color: $white;
+            width: 303px;
+            height: 74px;
+            font-family: $rbsmbld;
+            font-size: 28px;
+            cursor: pointer;
+            transition: transform 0.3s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

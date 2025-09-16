@@ -1,0 +1,70 @@
+.about{
+    padding: 100px 120px;
+    background-color: $white;
+    background-image: url(/img/Background-insight.png);
+    background-size: cover;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+    }
+}
+
+.about__container__text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__desc{
+        font-family: $ismldbld;
+        font-size: 24px;
+    }
+}
+
+.about__container__card{
+    &__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 42px;
+        &__item{
+            @include cardflex;
+            border-radius: 15px;
+            background-color: $white;
+            padding: 62px 38px;
+            gap: 24px;
+            text-align: center;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+            &__label{
+                color: $black;
+                font-family: $rbsmbld;
+                font-size: 65px;
+            }
+            &__desc{
+                color: $black;
+                font-family: $rbsmbld;
+                font-size: 26px;
+            }
+        }
+        &__another{
+            @include cardflex;
+            border-radius: 15px;
+            background-color: $black;
+            padding: 62px 38px;
+            gap: 24px;
+            text-align: center;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+            &__label{
+                @include vertgradient-text;
+                font-family: $rbsmbld;
+                font-size: 65px;
+            }
+            &__desc{
+                color: $white;
+                font-family: $rbsmbld;
+                font-size: 26px;
+            }
+        }
+    }
+}
