@@ -1,0 +1,99 @@
+.footer{
+    padding: 51px 127px;
+    background-color: black;
+    background-image: url(/img/Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer__container__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    &__logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 31px;
+        color: $white;
+        font-family: $robld;
+        font-size: 50px;
+    }
+    &__svgs{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    &__other{
+        //yo
+        &__label{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            &__labelname{
+                font-family: $IntBold;
+                font-size: 24px;
+                color: $white;
+            }
+            &__desc{
+                font-family: $ismldbld;
+                font-size: 13px;
+                color: $white;
+            }
+            &__inputabs{
+                display: flex;
+                flex-direction: row;
+                &__input{
+                    background-color: $black;
+                    border: none;
+                    border-top-left-radius: 6666px;    /* Левый верхний */
+                    border-bottom-left-radius: 6666px;
+                    width: 317px;
+                    height: 46px;
+                    color: $white;
+                    padding-left: 17px;
+                }
+                &__button{
+                    padding-right: 5px;
+                    height: 48px;
+                    background-color: black;
+                    border: none;
+                    border-top-right-radius: 6666px;    /* Левый верхний */
+                    border-bottom-right-radius: 6666px;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.01);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer__container__minors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 194px;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        font-family: $IntSemBold;
+        font-size: 20px;
+        &__label{
+            @include vertgradient-text;
+        }
+        &__item{
+            color: $white;
+        }
+    }
+}

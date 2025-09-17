@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "InstrumentSans-Medium";
   src: local("InstrumentSans-Medium") url("../fonts/InstrumentSans-Medium.woff2") format("woff2"), url("../fonts/InstrumentSans-Medium.woff") format("woff");
@@ -352,6 +353,107 @@ h2 {
 }
 .contact__container__textcontainer__buttons__chat:hover {
   transform: scale(1.1);
+}
+
+.footer {
+  padding: 51px 127px;
+  background-color: black;
+  background-image: url(/img/Background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__container__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer__container__links__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 31px;
+  color: #FFFFFF;
+  font-family: "RobotoCondensed-Bold", sans-serif;
+  font-size: 50px;
+}
+.footer__container__links__svgs {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.footer__container__links__other__label {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__container__links__other__label__labelname {
+  font-family: "Inter28pt-Bold", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.footer__container__links__other__label__desc {
+  font-family: "InstrumentSans-SemiBold", sans-serif;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+.footer__container__links__other__label__inputabs {
+  display: flex;
+  flex-direction: row;
+}
+.footer__container__links__other__label__inputabs__input {
+  background-color: #00070B;
+  border: none;
+  border-top-left-radius: 6666px; /* Левый верхний */
+  border-bottom-left-radius: 6666px;
+  width: 317px;
+  height: 46px;
+  color: #FFFFFF;
+  padding-left: 17px;
+}
+.footer__container__links__other__label__inputabs__button {
+  padding-right: 5px;
+  height: 48px;
+  background-color: black;
+  border: none;
+  border-top-right-radius: 6666px; /* Левый верхний */
+  border-bottom-right-radius: 6666px;
+  cursor: pointer;
+}
+.footer__container__links__other__label__inputabs__button:hover {
+  transform: scale(1.01);
+}
+
+.footer__container__minors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 194px;
+}
+.footer__container__minors__list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  font-family: "Inter28pt-SemiBold", sans-serif;
+  font-size: 20px;
+}
+.footer__container__minors__list__label {
+  background: linear-gradient(180deg, #bf0 0%, #709900 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.footer__container__minors__list__item {
+  color: #FFFFFF;
 }
 
 .hero-wrapper {
