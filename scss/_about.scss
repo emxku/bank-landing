@@ -28,6 +28,25 @@
         justify-content: space-between;
         align-items: center;
         gap: 42px;
+        @media (max-width: 1280px){
+            display: grid;
+            grid-template-areas: 
+                "item1 item2"
+                "item3 item4";
+            //justify-content: center;
+        }
+        &__nth-child{
+            grid-area: item1;
+        }
+        &__nth-child{
+            grid-area: item2;
+        }
+        &__nth-child{
+            grid-area: item3;
+        }
+        &__nth-child{
+            grid-area: item4;
+        }
         &__item{
             @include cardflex;
             border-radius: 15px;
@@ -36,6 +55,13 @@
             gap: 24px;
             text-align: center;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+            max-height: 315px;
+            width: 100%;
+            //min-width: 305px;
+            //@media (max-width: 1480px){
+            //    min-width: 258px;
+            //}
+            
             &__label{
                 color: $black;
                 font-family: $rbsmbld;
@@ -55,6 +81,11 @@
             gap: 24px;
             text-align: center;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+            max-height: 315px;
+            width: 100%;
+            //@media (max-width: 1480px){
+            //    min-width: 258px;
+            //}
             &__label{
                 @include vertgradient-text;
                 font-family: $rbsmbld;

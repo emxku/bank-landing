@@ -172,6 +172,24 @@ html, body {
   align-items: center;
   gap: 42px;
 }
+@media (max-width: 1280px) {
+  .about__container__card__list {
+    display: grid;
+    grid-template-areas: "item1 item2" "item3 item4";
+  }
+}
+.about__container__card__list__nth-child {
+  grid-area: item1;
+}
+.about__container__card__list__nth-child {
+  grid-area: item2;
+}
+.about__container__card__list__nth-child {
+  grid-area: item3;
+}
+.about__container__card__list__nth-child {
+  grid-area: item4;
+}
 .about__container__card__list__item {
   display: flex;
   flex-direction: column;
@@ -183,6 +201,8 @@ html, body {
   gap: 24px;
   text-align: center;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  max-height: 315px;
+  width: 100%;
 }
 .about__container__card__list__item__label {
   color: #00070B;
@@ -205,6 +225,8 @@ html, body {
   gap: 24px;
   text-align: center;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  max-height: 315px;
+  width: 100%;
 }
 .about__container__card__list__another__label {
   background: linear-gradient(180deg, #bf0 0%, #709900 100%);
