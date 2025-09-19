@@ -473,11 +473,14 @@ h2 {
   align-items: flex-start;
   justify-content: space-between;
   gap: 186px 69px;
+  padding-bottom: 20px;
   grid-template-areas: "card cardphoto" "backedby cardphoto";
 }
 @media (max-width: 1600px) {
   .hero {
     grid-template-areas: "card ." "cardphoto ." "backedby .";
+    padding-bottom: 20px;
+    gap: 80px;
   }
 }
 
