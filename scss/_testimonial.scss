@@ -7,6 +7,9 @@
         display: flex;
         flex-direction: column;
         gap: 33px;
+        @media (max-width: 1600px){
+            gap: 18px;
+        }
     }
 }
 
@@ -34,6 +37,9 @@
     width: 100%;
     overflow: hidden;
     height: 578px;
+    @media (max-width: 1600px){
+        height: 332px;
+    }
 }
 
 .testimonial__container__feedback {
@@ -96,6 +102,12 @@
             height: 100%;
             &__photo{
                 border-radius: 15px;
+                @media (max-width: 1600px){
+                    //max-width: 490px;
+                    //max-height: 499px;
+                    height: 332px;
+                    width: 338px;
+                }
             }
         }
         &__card{
@@ -111,9 +123,18 @@
             height: 578px;
             width: 100%;
             border-radius: 15px;
+            @media (max-width: 1600px){
+                    height: 332px;
+                    gap: 50px;
+                    //height: 100%;
+                    //width: 100%;
+            }
             .feedback-text{
                 font-family: $isreg;
                 font-size: 36px;
+                @media (max-width: 1600px){
+                    font-size: 18px;
+                }
             }
             .feedback-description{
                 display: flex;
@@ -126,10 +147,16 @@
                     &__name{
                         font-family: $ismldbld;
                         font-size: 28px;
+                        @media (max-width: 1500px){
+                            font-size: 16px;
+                        }
                     }
                     &__state{
                         font-family: $ismed;
                         font-size: 24px;
+                        @media (max-width: 1500px){
+                            font-size: 16px;
+                        }
                     }
                 }
             }

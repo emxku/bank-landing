@@ -939,6 +939,11 @@ html, body {
   flex-direction: column;
   gap: 33px;
 }
+@media (max-width: 1600px) {
+  .testimonial__container {
+    gap: 18px;
+  }
+}
 
 .left-button {
   border-radius: 100%;
@@ -965,6 +970,11 @@ html, body {
   width: 100%;
   overflow: hidden;
   height: 578px;
+}
+@media (max-width: 1600px) {
+  .testimonial__container__carousel {
+    height: 332px;
+  }
 }
 
 .testimonial__container__feedback {
@@ -1026,6 +1036,12 @@ html, body {
 .testimonial__container__feedback__avatar__photo {
   border-radius: 15px;
 }
+@media (max-width: 1600px) {
+  .testimonial__container__feedback__avatar__photo {
+    height: 332px;
+    width: 338px;
+  }
+}
 .testimonial__container__feedback__card {
   overflow: hidden;
   padding: 62px 62px;
@@ -1040,9 +1056,20 @@ html, body {
   width: 100%;
   border-radius: 15px;
 }
+@media (max-width: 1600px) {
+  .testimonial__container__feedback__card {
+    height: 332px;
+    gap: 50px;
+  }
+}
 .testimonial__container__feedback__card .feedback-text {
   font-family: "InstrumentSans-Regular", sans-serif;
   font-size: 36px;
+}
+@media (max-width: 1600px) {
+  .testimonial__container__feedback__card .feedback-text {
+    font-size: 18px;
+  }
 }
 .testimonial__container__feedback__card .feedback-description {
   display: flex;
@@ -1058,9 +1085,19 @@ html, body {
   font-family: "InstrumentSans-SemiBold", sans-serif;
   font-size: 28px;
 }
+@media (max-width: 1500px) {
+  .testimonial__container__feedback__card .feedback-description__client__name {
+    font-size: 16px;
+  }
+}
 .testimonial__container__feedback__card .feedback-description__client__state {
   font-family: "InstrumentSans-Medium", sans-serif;
   font-size: 24px;
+}
+@media (max-width: 1500px) {
+  .testimonial__container__feedback__card .feedback-description__client__state {
+    font-size: 16px;
+  }
 }
 
 .nav {
