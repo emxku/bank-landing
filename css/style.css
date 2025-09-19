@@ -326,6 +326,12 @@ html, body {
   padding-right: 87px;
   padding-top: 104px;
 }
+@media (max-width: 1600px) {
+  .contact__container {
+    flex-direction: column-reverse;
+    padding-left: 76px;
+  }
+}
 .contact__container__textcontainer {
   color: #FFFFFF;
   display: flex;
