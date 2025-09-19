@@ -401,6 +401,12 @@ html, body {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 1472px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
 
 .footer__container__links {
   display: flex;
