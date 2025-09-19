@@ -94,6 +94,9 @@
         &__avatar{
             max-height: 578px;
             height: 100%;
+            &__photo{
+                border-radius: 15px;
+            }
         }
         &__card{
             overflow: hidden;

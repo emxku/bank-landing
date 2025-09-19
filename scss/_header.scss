@@ -4,9 +4,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    //gap: 230px;
     .bankname{
-        display: inline-flex;
+        display: flex;
         flex-direction: row;
         align-items: center;
         gap: 17px;
@@ -15,6 +14,15 @@
         color: $white;
         .logo{
             cursor: pointer;
+            &__img{
+                @media (max-width: 1480px){
+                height: 40px;
+                width: 40px;
+            }
+            }
+        }
+        @media (max-width: 1480px){
+            font-size: 26px;
         }
     }
     &__list{
@@ -34,12 +42,19 @@
             color: $sky;
             transform: scale(1.05);
         }
+        @media (max-width: 1480px){
+            font-size: 18px;
+        }
     }
     .header__buttons{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 34px;
+        @media (max-width: 1480px){
+            //flex-direction: column;
+            gap: 15px;
+        }
         .button__login{
             border: 2px solid $white;
             background-color: $black;
@@ -53,6 +68,12 @@
             transition: transform 0.3s;
             &:hover{
                 transform: scale(1.1);
+            }
+            @media (max-width: 1480px){
+                width: 110px;
+                height: 33px;
+                font-family: $rbsmbld;
+                font-size: 18px;
             }
         }
         .button__signup{
@@ -68,6 +89,12 @@
             transition: transform 0.3s;
             &:hover{
                 transform: scale(1.1);
+            }
+            @media (max-width: 1480px){
+                width: 110px;
+                height: 33px;
+                font-family: $rbsmbld;
+                font-size: 18px;
             }
         }
     }

@@ -986,6 +986,9 @@ h2 {
   max-height: 578px;
   height: 100%;
 }
+.testimonial__container__feedback__avatar__photo {
+  border-radius: 15px;
+}
 .testimonial__container__feedback__card {
   overflow: hidden;
   padding: 62px 62px;
@@ -1031,7 +1034,7 @@ h2 {
   justify-content: space-between;
 }
 .nav .bankname {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   gap: 17px;
@@ -1041,6 +1044,17 @@ h2 {
 }
 .nav .bankname .logo {
   cursor: pointer;
+}
+@media (max-width: 1480px) {
+  .nav .bankname .logo__img {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media (max-width: 1480px) {
+  .nav .bankname {
+    font-size: 26px;
+  }
 }
 .nav__list {
   display: flex;
@@ -1060,11 +1074,21 @@ h2 {
   color: #D6FFF7;
   transform: scale(1.05);
 }
+@media (max-width: 1480px) {
+  .nav__item {
+    font-size: 18px;
+  }
+}
 .nav .header__buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 34px;
+}
+@media (max-width: 1480px) {
+  .nav .header__buttons {
+    gap: 15px;
+  }
 }
 .nav .header__buttons .button__login {
   border: 2px solid #FFFFFF;
@@ -1081,6 +1105,14 @@ h2 {
 .nav .header__buttons .button__login:hover {
   transform: scale(1.1);
 }
+@media (max-width: 1480px) {
+  .nav .header__buttons .button__login {
+    width: 110px;
+    height: 33px;
+    font-family: "RobotoCondensed-SemiBold", sans-serif;
+    font-size: 18px;
+  }
+}
 .nav .header__buttons .button__signup {
   background-color: #BBFF00;
   border: 2px solid #BBFF00;
@@ -1095,4 +1127,12 @@ h2 {
 }
 .nav .header__buttons .button__signup:hover {
   transform: scale(1.1);
+}
+@media (max-width: 1480px) {
+  .nav .header__buttons .button__signup {
+    width: 110px;
+    height: 33px;
+    font-family: "RobotoCondensed-SemiBold", sans-serif;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=style.css.map */
