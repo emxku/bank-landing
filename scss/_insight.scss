@@ -7,21 +7,24 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 29px;
+    @media (max-width: 1480px){
+        justify-content: center;
+    }
 }
 
-//.insight__title{
-//    &__label{
-//        // тут были свойства для h2, но я решил их вынести в reset потому что на сайте все h2 одинаковые
-//    }
-//}
 
 %card-base{
     @include cardflex;
     width: 100%;
-    min-width: 399px;
-    //max-width: 499px; по желанию настроить потом надобно когда адаптив делать буду
+    //min-width: 442px;
+    max-width: 499px; 
+    //по желанию настроить потом надобно когда адаптив делать буду
     min-height: 529px;
     border-radius: 15px;
+    @media (max-width: 1600px){
+        max-width: 1274px;
+        width: 100%;
+    }
 }
 
 .insight__cards{
@@ -30,6 +33,9 @@
     align-items: center;
     justify-content: space-between;
     gap: 90px;
+    @media (max-width: 1600px){
+        flex-direction: column;
+    }
     &__card1{
         @extend %card-base;
         background-color: $black;

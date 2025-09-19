@@ -665,6 +665,11 @@ h2 {
   justify-content: space-between;
   gap: 29px;
 }
+@media (max-width: 1480px) {
+  .insight {
+    justify-content: center;
+  }
+}
 
 .insight__cards__card3, .insight__cards__card2, .insight__cards__card1 {
   display: flex;
@@ -672,9 +677,15 @@ h2 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-width: 399px;
+  max-width: 499px;
   min-height: 529px;
   border-radius: 15px;
+}
+@media (max-width: 1600px) {
+  .insight__cards__card3, .insight__cards__card2, .insight__cards__card1 {
+    max-width: 1274px;
+    width: 100%;
+  }
 }
 
 .insight__cards {
@@ -683,6 +694,11 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 90px;
+}
+@media (max-width: 1600px) {
+  .insight__cards {
+    flex-direction: column;
+  }
 }
 .insight__cards__card1 {
   background-color: #00070B;
