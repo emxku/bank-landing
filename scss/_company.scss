@@ -2,7 +2,7 @@
     padding: 0px 120px;
     background-color: $white;
     background-image: url(/img/Background-insight.png);
-    background-size: cover;
+    background-size: contain;
     &__container{
         display: flex;
         flex-direction: row;

@@ -138,11 +138,15 @@ h2 {
   color: #00070B;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .about {
   padding: 100px 120px;
   background-color: #FFFFFF;
   background-image: url(/img/Background-insight.png);
-  background-size: cover;
+  background-size: contain;
 }
 .about__container {
   display: flex;
@@ -221,7 +225,7 @@ h2 {
   padding: 0px 120px;
   background-color: #FFFFFF;
   background-image: url(/img/Background-insight.png);
-  background-size: cover;
+  background-size: contain;
 }
 .company__container {
   display: flex;
@@ -287,7 +291,7 @@ h2 {
   padding: 100px 120px;
   background-color: #FFFFFF;
   background-image: url(/img/Background-insight.png);
-  background-size: cover;
+  background-size: contain;
 }
 
 .contact__container {
@@ -659,7 +663,7 @@ h2 {
   padding: 65px 120px;
   background-color: #FFFFFF;
   background-image: url(/img/Background-insight.png);
-  background-size: cover;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -763,11 +767,16 @@ h2 {
   padding: 33px 120px;
   background-color: #FFFFFF;
   background-image: url(/img/Background-insight.png);
-  background-size: cover;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 29px;
+}
+@media (max-width: 1480px) {
+  .product {
+    justify-content: center;
+  }
 }
 
 .product__container__list {
@@ -778,18 +787,27 @@ h2 {
   gap: 90px;
   color: #00070B;
 }
+@media (max-width: 1600px) {
+  .product__container__list {
+    flex-direction: column;
+  }
+}
 .product__container__list__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-width: 399px;
   padding: 56px 21px;
   gap: 11px;
   border-radius: 15px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
   background-color: #FFFFFF;
+}
+@media (max-width: 1600px) {
+  .product__container__list__item {
+    max-width: 1274px;
+  }
 }
 .product__container__list__item__label {
   font-family: "RobotoCondensed-Medium", sans-serif;
@@ -806,7 +824,7 @@ h2 {
   padding: 118px 120px;
   background-color: #FFFFFF;
   background-image: url(/img/Background-insight.png);
-  background-size: cover;
+  background-size: contain;
 }
 .solutions__container {
   display: flex;
@@ -914,7 +932,7 @@ h2 {
   padding: 46px 120px;
   background-color: #FFFFFF;
   background-image: url(/img/Background-insight.png);
-  background-size: cover;
+  background-size: contain;
 }
 .testimonial__container {
   display: flex;
